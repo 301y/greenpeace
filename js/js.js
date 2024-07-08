@@ -143,7 +143,7 @@ $(function () {
 function drawCircleGraph() {
   $(".slide2 .circle-graph").each(function (index, node) {
     let perNum = $(this).attr("circleProgress");
-    let fillColors = "#ffffff"; // 그래프의 색상 배열
+    let fillColors = "rgba(255, 255, 255, 0.8)"; // 그래프의 색상 배열
     let fillColor = fillColors;
 
     let slideWidth = $(".slide2 .swiper-slide").width(); // .slide2의 폭을 가져옴
