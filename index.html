@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Peace</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/shortcut.png" type="image/png" />
+    <!-- 오도미터 css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/odometer-theme-default.css"
+    />
+    <!-- 슬라이드 css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 스크롤 css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- 탑 버튼 -->
+    <a href="#" class="top_btn"><img src="img/top_btn.png" alt="top버튼" /></a>
+
+    <!-- 탑 네비 -->
+    <div class="gnb">
+      <div class="gnb_in">
+        <a href="./index.html"
+          ><img src="./img/i_logo.png" alt="그린피스 로고"
+        /></a>
+        <div class="gnb_icon">
+          <a href="#none"
+            ><img src="./img/menu.png" alt="메뉴" class="menu_on"
+          /></a>
+          <a href="#"><img src="./img/i_share.png" alt="공유하기" /></a>
+        </div>
+      </div>
+      <div class="moblie_menu">
+        <ul class="mobile_nav">
+          <li><a href="#project" class="on_menu">프로젝트</a></li>
+          <li><a href="#involvement">서명운동</a></li>
+          <li><a href="#donation">후원하기</a></li>
+          <li><a href="#core">핵심가치</a></li>
+          <li><a href="#news">뉴스레터</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 메인-->
+    <div class="main">
+      <img src="./img/m_i_cloud.png" alt="구름" class="cloud1" />
+      <img src="./img/m_i_cloud2.png" alt="구름" class="cloud2" />
+      <img src="./img/main_water.png" alt="물" class="water" data-aos="fade-up" />
+      <img src="img/m_i_ani1.png" alt="수달" class="ani1" />
+      <img src="./img/m_i_tree.png" alt="나무" class="tree1" />
+      <img src="./img/ani2.png" alt="토끼" class="ani2" />
+      <img src="./img/ani3.png" alt="나무늘보" class="ani3" />
+      <img src="./img/ani4.png" alt="수달1" class="ani4" />
+      <img src="./img/ani5.png" alt="수달2" class="ani5" />
+
+      <!-- 메인 슬라이드 -->
+      <div
+        class="swiper-container slide"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/main1.jpg" alt="메인 배너1" />
+              <div class="slidetxt">
+                <h2>기후위기로부터 바다를</h2>
+                <br />
+                <h2>지킬 커다란 승리</h2>
+
+                <div class="slidetxtin"><b>해양</b> ⏱5분 2024년 06월 26일</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/main2.jpg" alt="메인 배너2" />
+              <div class="slidetxt slidetxt2">
+                <h2>제주 바다를 지키는 해녀</h2>
+                <br />
+                <h2>이유정 인터뷰</h2>
+
+                <div class="slidetxtin"><b>해양</b> ⏱3분 2024년 05월 08일</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/main3.jpg" alt="메인 배너3" />
+              <div class="slidetxt slidetxt3">
+                <h2>후쿠시마 오염수 방류의</h2>
+                <br />
+                <h2>시작과 끝은 어디일까</h2>
+
+                <div class="slidetxtin"><b>기후</b> ⏱5분 2023년 08월 22일</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-set" cursor-class="arrow">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <!-- 고정 네비게이션 -->
+      <div class="gnb1">
+        <a href="./index.html"
+          ><img src="./img/i_logo.png" alt="그린피스 로고"
+        /></a>
+        <ul class="nav">
+          <li><a href="#project" class="on_menu">프로젝트</a></li>
+          <li><a href="#involvement">서명운동</a></li>
+          <li><a href="#donation">후원하기</a></li>
+          <li><a href="#core">핵심가치</a></li>
+          <li><a href="#news">뉴스레터</a></li>
+        </ul>
+        <a href="#"><img src="./img/i_share.png" alt="공유하기" /></a>
+      </div>
+
+      <!-- 섹션 1 -->
+      <div class="project section_in" id="project">
+        <h1 data-aos="fade-up">
+          <span class="highlight">지구를 위한</span><br />그린피스 프로젝트
+        </h1>
+        <h5 data-aos="fade-up" data-aos-delay="200">
+          그린피스는 국내는 물론 전 세계의 환경 문제에 대해 <br />
+          명확한 목표를 가지고 프로젝트를 진행합니다.
+        </h5>
+        <div class="slide2">
+          <div class="swiper-container gallery-center">
+            <div class="gallery-center_inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="graph1">
+                    <img src="./img/slide21.png" alt="갤러리1" />
+                    <div class="circle-graph" circleProgress="80">
+                      <strong class="circle-percent"></strong>
+                    </div>
+                    <div class="txt1">
+                      <h2>플라스틱 제로</h2>
+                      <p>기후</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="graph1">
+                    <img src="./img/slide22.png" alt="갤러리1" />
+                    <div class="circle-graph" circleProgress="90">
+                      <strong class="circle-percent"></strong>
+                    </div>
+                    <div class="txt1">
+                      <h2>탈원전</h2>
+                      <p>기후</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="graph1">
+                    <img src="./img/slide23.png" alt="갤러리1" />
+                    <div class="circle-graph" circleProgress="28">
+                      <strong class="circle-percent"></strong>
+                    </div>
+                    <div class="txt1">
+                      <h2>생물다양성</h2>
+                      <p>기후</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="graph1">
+                    <img src="./img/slide24.png" alt="갤러리1" />
+                    <div class="circle-graph" circleProgress="28">
+                      <strong class="circle-percent"></strong>
+                    </div>
+                    <div class="txt1">
+                      <h2>아마존보호</h2>
+                      <p>기후</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="graph1">
+                    <img src="./img/slide25.png" alt="갤러리1" />
+                    <div class="circle-graph" circleProgress="20">
+                      <strong class="circle-percent"></strong>
+                    </div>
+                    <div class="txt1">
+                      <h2>해양보호</h2>
+                      <p>해양</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="graph1">
+                    <img src="./img/slide26.png" alt="갤러리1" />
+                    <div class="circle-graph" circleProgress="68">
+                      <strong class="circle-percent"></strong>
+                    </div>
+                    <div class="txt1">
+                      <h2>북극보호</h2>
+                      <p>북극</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="graph1">
+                    <img src="./img/slide27.png" alt="갤러리1" />
+                    <div class="circle-graph" circleProgress="15">
+                      <strong class="circle-percent"></strong>
+                    </div>
+                    <div class="txt1">
+                      <h2>기후참정권</h2>
+                      <p>기후</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="graph1">
+                    <img src="./img/slide28.png" alt="갤러리1" />
+                    <div class="circle-graph" circleProgress="50">
+                      <strong class="circle-percent"></strong>
+                    </div>
+                    <div class="txt1">
+                      <h2>친환경교통</h2>
+                      <p>기후</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-set" cursor-class="arrow">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 오도미터 -->
+      <div class="box2" data-aos="fade-up">
+        <h2>후원금은 어떻게 쓰이나요?</h2>
+
+        <div class="how">
+          <div class="how1 how_on howbox" data-aos="fade-up">
+            <div class="how1_in">
+              <img src="./img/how1.png" alt="기후변화대응" />
+              <div class="how_in">
+                <div class="odo_box">
+                  <p>기후변화 대응</p>
+                  <div class="numbox2">
+                    <div class="odometer"></div>
+                    <span class="per">%</span>
+                  </div>
+                </div>
+                <img src="./img/how1.png" alt="" />
+              </div>
+            </div>
+            <p>
+              <b>기후변화 대응</b>을 위한 정책 제안 및 캠페인 전개, <br />
+              신재생 에너지 전환 촉구, 온실가지 감축 활동 등을 펼칩니다.
+            </p>
+          </div>
+          <div class="how2" data-aos="fade-up">
+            <div
+              class="how2_1 how_small howbox"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="how_in">
+                <div class="odo_box">
+                  <p>글로벌 캠페인</p>
+                  <div class="numbox2"></div>
+                  <div class="odometer"></div>
+                  <span class="per">%</span>
+                </div>
+
+                <img src="./img/how2.png" alt="" />
+              </div>
+              <p>
+                전 <b>세계적인 환경</b> 문제에 대한 해결책 마련을 위해 <br />
+                국제사회와 협력하여 다양한 <b>캠페인</b>을 실시합니다.
+              </p>
+            </div>
+
+            <div
+              class="how2_2 how_small howbox"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <div class="how_in">
+                <div class="odo_box">
+                  <p>미디어 활동 및 비폭력 직접행동</p>
+                  <div class="numbox2"></div>
+                  <div class="odometer"></div>
+                  <span class="per">%</span>
+                </div>
+                <img src="./img/how3.png" alt="" />
+              </div>
+              <p>
+                대중의 관심과 인식 제고를 위해 <b>미디어를 적극 활용</b>하고,
+                <br />
+                상징적인 <b>비폭력 직접행동</b>을 통해 메시지를 전달합니다.
+              </p>
+            </div>
+          </div>
+          <div
+            class="how3 how_small howbox"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="how_in">
+              <div class="odo_box">
+                <p>생물 다양성</p>
+                <div class="numbox2"></div>
+                <div class="odometer"></div>
+                <span class="per">%</span>
+              </div>
+              <img src="./img/how4.png" alt="생물 다양성 보호" />
+            </div>
+            <p>
+              해양, 열대우림 등 <b>생물 다양성 보호</b>를 위한 <br />
+              연구와 정책 제안, 활동을 펼칩니다.
+            </p>
+          </div>
+          <div
+            class="how4 how_small howbox"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="how_in">
+              <div class="odo_box">
+                <p>독성물질 제거(플라스틱)</p>
+                <div class="numbox2"></div>
+                <div class="odometer"></div>
+                <span class="per">%</span>
+              </div>
+              <img src="./img/how5.png" alt="생물 다양성 보호" />
+            </div>
+            <p>
+              기업과 정부를 상대로 <b>플라스틱 규제 강화</b>와<br />
+              대안 마련을 요구하는 캠페인을 진행합니다.
+            </p>
+          </div>
+          <div
+            class="how5 how_small howbox"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div class="how_in">
+              <div class="odo_box">
+                <p>과학 조사 연구와 친환경 정책</p>
+                <div class="numbox2"></div>
+                <div class="odometer"></div>
+                <span class="per">%</span>
+              </div>
+              <img src="./img/how6.png" alt="생물 다양성 보호" />
+            </div>
+            <p>
+              환경 문제에 대한 <b>과학적 데이터 수집과 분석</b>을 <br />
+              통해 정확한 실태 파악과 해결책을 찾습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 캠페인 종류-->
+      <div class="campain">
+        <h4 data-aos="fade-up" data-aos-delay="200">Green Campaign</h4>
+        <h1 data-aos="fade-up" data-aos-delay="200">
+          생명을 살리는<br />그린피스 캠페인
+        </h1>
+        <div class="box3_in" data-aos="fade-up" data-aos-delay="000">
+          <div class="b3_0">
+            <h2>
+              우리가 진행하는 <br />
+              지역 및 글로벌 캠페인
+            </h2>
+            <p>그린피스의 발걸음은 전세계에 희망을 전하고 있습니다.</p>
+          </div>
+          <div class="b3_1 b_sbox" >
+            <h2>해양</h2>
+            <p>oceans</p>
+          </div>
+          <div class="b3_2 b_sbox">
+            <h2>건강한 삶</h2>
+            <p>health</p>
+          </div>
+          <div class="b3_3 b_sbox">
+            <h2>기후</h2>
+            <p>climate</p>
+          </div>
+          <div class="b3_4 b_sbox">
+            <h2>산림</h2>
+            <p>forests</p>
+          </div>
+          <div class="b3_5 b_sbox">
+            <h2>플라스틱</h2>
+            <p>plastics</p>
+          </div>
+          <div class="b3_6 b_sbox">
+            <h2>북극</h2>
+            <p>arctic</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 섹션 서명 -->
+      <div class="Involvement section_in" id="involvement">
+        <h4 data-aos="fade-up" data-aos-offset="200">Involvement</h4>
+        <h1 data-aos="fade-up" data-aos-offset="200">서명에 참여해주세요</h1>
+        <p data-aos="fade-up" data-aos-offset="200">
+          환경을 지키는 작은 행동부터 시작하세요. <br />
+          당신의 서명 하나가 지속 가능한 미래를 만듭니다.
+        </p>
+
+        <div class="swiper-container gallery-center bannerslide">
+          <div class="gallery-center_inner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide banner1">
+                <a href="#">
+                  <div class="iv_bgg"></div>
+                  <div class="iv_topt">
+                    <h2>벌에게 한 끼를 선물해 주세요</h2>
+                    <p>
+                      여러분의 이름으로 굶주린 벌에게 영양 가득한 꽃 식사를
+                      전해주세요.
+                    </p>
+                  </div>
+                  <span>서명하기</span>
+                </a>
+              </div>
+              <div class="swiper-slide banner2">
+                <a href="#">
+                  <div class="iv_bgg"></div>
+                  <div class="iv_topt">
+                    <h2>벌에게 한 끼를 선물해 주세요</h2>
+                    <p>
+                      여러분의 이름으로 굶주린 벌에게 영양 가득한 꽃 식사를
+                      전해주세요.
+                    </p>
+                  </div>
+                  <span>서명하기</span>
+                </a>
+              </div>
+              <div class="swiper-slide banner3">
+                <a href="#">
+                  <div class="iv_bgg"></div>
+                  <div class="iv_topt">
+                    <h2>벌에게 한 끼를 선물해 주세요</h2>
+                    <p>
+                      여러분의 이름으로 굶주린 벌에게 영양 가득한 꽃 식사를
+                      전해주세요.
+                    </p>
+                  </div>
+                  <span>서명하기</span>
+                </a>
+              </div>
+              <div class="swiper-slide banner4">
+                <a href="#">
+                  <div class="iv_bgg"></div>
+                  <div class="iv_topt">
+                    <h2>벌에게 한 끼를 선물해 주세요</h2>
+                    <p>
+                      여러분의 이름으로 굶주린 벌에게 영양 가득한 꽃 식사를
+                      전해주세요.
+                    </p>
+                  </div>
+                  <span>서명하기</span>
+                </a>
+              </div>
+            </div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-set" cursor-class="arrow">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <!-- 블릿 버튼 -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 섹션 후원하기 -->
+      <div class="donation section_in" id="donation">
+        <h4 data-aos="fade-up">Donation</h4>
+        <h1 data-aos="fade-up" data-aos-delay="300">
+          후원으로 변화를 만드세요!
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="300">
+          그린피스는 정치, 재정적 독립성을 위해 개인의 후원으로만 운영됩니다.
+          <br />
+          여러분의 후원으로 주요 환경문제에 맞설 수 있습니다.
+        </p>
+        <select
+          name="donation"
+          id="donationselect"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <option value="정기">정기</option>
+          <option value="일시">일시</option>
+        </select>
+        <ul class="do_list" data-aos="fade-up" data-aos-delay="300">
+          <li><a href="#none" class="do_btn0 do_on">10,000원</a></li>
+          <li><a href="#none" class="do_btn0">30,000원</a></li>
+          <li><a href="#none" class="do_btn0">50,000원</a></li>
+          <li>
+            <textarea
+              name="donation"
+              id="do"
+              cols="20"
+              rows="1"
+              placeholder="금액 입력"
+            ></textarea>
+          </li>
+        </ul>
+        <a href="#none" class="do_btn"> 후원하기 </a>
+        <img
+          src="./img/donationi.png"
+          alt="지구"
+          class="do_i1 do_i"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        />
+        <img
+          src="./img/donationi2.png"
+          alt="북극곰"
+          class="do_i2 do_i"
+          data-aos="fade-up"
+        />
+        <img
+          src="./img/donation3.png"
+          alt="아기펭귄"
+          class="do_i3 do_i"
+          data-aos="fade-up"
+        />
+        <img
+          src="./img/donation4.png"
+          alt="어른펭귄"
+          class="do_i4 do_i"
+          data-aos="fade-up"
+        />
+      </div>
+
+      <!-- 갤러리변화의 이정표 -->
+      <div class="gall2main">
+        <img
+          src="./img/icon_sun.png"
+          alt="해"
+          class="icon_sun"
+          data-aos="flip-right"
+          data-aos-delay="100"
+        />
+        <img
+          src="./img/icon_cloud3.png"
+          alt="구름"
+          class="icon_cloud3"
+          data-aos="flip-right"
+          data-aos-delay="100"
+        />
+        <h2 data-aos="fade-up" data-aos-delay="200">변화의 이정표</h2>
+        <div class="gall2" data-aos="fade-up" data-aos-delay="300">
+          <div class="swiper-container gallery">
+            <div class="gallery_inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/gall1.png" alt="갤러리1" />
+                    <div class="gall_time">
+                      <span>2024년 06월 25일</span>
+                      <span>⏱️ 3분</span>
+                    </div>
+                    <div class="gall_title">
+                      <h4>열대우림에서 전해온 기쁜소식</h4>
+                      <a href="#none">일반</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/gall2.png" alt="갤러리1" />
+                    <div class="gall_time">
+                      <span>2024년 06월 25일</span>
+                      <span>⏱️ 3분</span>
+                    </div>
+                    <div class="gall_title">
+                      <h4>
+                        글로벌 그린 뉴스 "기후를 위한 시민들의 승리! <br />
+                        희망을 위한 6가지 이유"
+                      </h4>
+                      <a href="#none">일반</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/gall3.png" alt="갤러리1" />
+                    <div class="gall_time">
+                      <span>2024년 03월 18일</span>
+                      <span>⏱️ 3분</span>
+                    </div>
+                    <div class="gall_title">
+                      <h4>
+                        그린피스 홍콩, <br />
+                        재사용컵 대여 및 반환 앱 출시!
+                      </h4>
+                      <a href="#none">플라스틱</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/gall4.png" alt="갤러리1" />
+                    <div class="gall_time">
+                      <span>2024년 02월 05일</span>
+                      <span>⏱️ 4분</span>
+                    </div>
+                    <div class="gall_title">
+                      <h4>북극을 지킨 청소년들</h4>
+                      <a href="#none">기후</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/gall5.png" alt="갤러리1" />
+                    <div class="gall_time">
+                      <span>2023년 12월 20일</span>
+                      <span>⏱️ 4분</span>
+                    </div>
+                    <div class="gall_title">
+                      <h4>함께 만든 2023 그린피스</h4>
+                      <a href="#none">일반</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/gall6.png" alt="갤러리1" />
+                    <div class="gall_time">
+                      <span>2023년 09월 21일</span>
+                      <span>⏱️ 3분</span>
+                    </div>
+                    <div class="gall_title">
+                      <h4>변화를 만드는 시민들의 목소리</h4>
+                      <a href="#none">일반</a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- 블릿 버튼 -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 핵심가치 -->
+      <div class="core" id="core">
+        <img
+          src="./img/core_icon.png"
+          alt="다람쥐"
+          class="core_icon"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        />
+        <h4 data-aos="fade-up" data-aos-delay="200">Greenpeace Core Values</h4>
+
+        <h1 data-aos="fade-up" data-aos-delay="200">그린피스 핵심가치</h1>
+        <div class="core_box">
+          <div class="c_box_in" data-aos="fade-up" data-aos-delay="200">
+            <img src="./img/c_icon1.png" alt="해결책" />
+            <div class="c_box_in_in">
+              <h2>해결책 제시</h2>
+              <p>
+                건강하고 평화로운 미래를 위해<br />
+                환경문제의 해결책을 알립니다.
+              </p>
+            </div>
+          </div>
+          <div class="c_box_in" data-aos="fade-up" data-aos-delay="400">
+            <img src="./img/c_icon2.png" alt="집모양 아이콘" />
+            <div class="c_box_in_in">
+              <h2>재정적 독립</h2>
+              <p>
+                그린피스는 정부나 기업의 <br />
+                재정 지원을 받지 않습니다.
+              </p>
+            </div>
+          </div>
+          <div class="c_box_in" data-aos="fade-up" data-aos-delay="200">
+            <img src="./img/c_icon3.png" alt="글로벌 아이콘" />
+            <div class="c_box_in_in">
+              <h2>글로벌 영향력</h2>
+              <p>
+                지구 곳곳에서 환경을 지키기 위해<br />
+                그린피스의 자원을 극대화합니다.
+              </p>
+            </div>
+          </div>
+          <div class="c_box_in" data-aos="fade-up" data-aos-delay="400">
+            <img src="./img/c_icon4.png" alt="새모양 아이콘" />
+            <div class="c_box_in_in">
+              <h2>비폭력직접행동</h2>
+              <p>
+                그린피스는 평화로운 행동이<br />
+                세상을 바꾼다고 믿습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 인스타그램 -->
+      <div class="ins">
+        <img
+          src="./img/ins_icon1.png"
+          alt="인스타"
+          class="ins_icon1"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        />
+        <img
+          src="./img/ins_icon2.png"
+          alt="인스타"
+          class="ins_icon2"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        />
+        <img
+          src="./img/ins_icon3.png"
+          alt="인스타"
+          class="ins_icon3"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        />
+        <img
+          src="./img/ins_icon4.png"
+          alt="인스타"
+          class="ins_icon4"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        />
+        <img
+          src="./img/ins_icon5.png"
+          alt="인스타"
+          class="ins_icon5"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        />
+        <h4 data-aos="fade-up" data-aos-delay="300">Greenpeace instagram</h4>
+        <h1 data-aos="fade-up" data-aos-delay="300">그린피스의 어제와 오늘</h1>
+        <div class="ins_slide" data-aos="fade-up" data-aos-delay="300">
+          <div class="swiper-container flowslide">
+            <div class="flowslide_inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="./img/insta1.png" alt="인스타그램"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="./img/insta2.png" alt="인스타그램"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="./img/insta3.png" alt="인스타그램"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="./img/insta4.png" alt="인스타그램"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="./img/insta5.png" alt="인스타그램"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="./img/insta6.png" alt="인스타그램"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="./img/insta7.png" alt="인스타그램"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="./img/insta8.png" alt="인스타그램"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://www.instagram.com/greenpeacekorea/"
+          target="_blank"
+          class="in_btn"
+          data-aos="fade-up"
+          >그린피스 인스타그램</a
+        >
+      </div>
+
+      <!-- 연락처 뉴스레터 -->
+      <div class="news" id="news">
+        <img
+          src="./img/news_i0.png"
+          alt="고래"
+          class="news_i0"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        />
+        <div class="news_in">
+          <div class="quest" data-aos="fade-up" data-aos-delay="300">
+            <div class="mail">
+              <img src="./img/news_mail.png" alt="메일 아이콘" />
+              <p>후원관리 메일문의</p>
+              <p><span>mail form</span></p>
+              <div class="mailbtn">
+                <a href="#none"> sukr@greenpeace.org </a>
+              </div>
+            </div>
+            <div class="call">
+              <img src="./img/news_call.png" alt="전화 아이콘" />
+              <p>유선 문의</p>
+              <p><span>telephone</span></p>
+              <p class="callnum">02-3144-1997</p>
+              <p class="calltime">운영시간 10:00~17:00</p>
+            </div>
+          </div>
+          <div class="faq" data-aos="fade-up" data-aos-delay="300">
+            <a href="#none">
+              <img src="./img/news_faq.png" alt="자주 묻는 질문 바로가기" />
+              <span>자주 묻는 질문 FAQ</span>
+            </a>
+          </div>
+
+          <div class="letter" data-aos="fade-up" data-aos-delay="300">
+            <div class="letterle">
+              <img src="./img/newbox.png" alt="뉴스레터" />
+              <h2>
+                그린피스 뉴스레터로 <br />
+                환경 보호 소식을 받아보세요.
+              </h2>
+              <p>최신 캠페인과 활동 정보를 바로 확인하실 수 있습니다.</p>
+            </div>
+            <div class="letterri">
+              <p>성함 또는 닉네임</p>
+              <input type="text" class="in_t" />
+              <p>이메일 주소</p>
+              <input type="tel" class="in_t" />
+              <div class="check">
+                <input type="checkbox" class="in_c" />
+                <p>개인정보 수집 이용 및 광고 수신 동의</p>
+              </div>
+              <input type="submit" value="뉴스레터 구독하기" class="submit" />
+            </div>
+          </div>
+        </div>
+        <img
+          src="./img/news_i1.png"
+          alt=""
+          class="news_i1"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        />
+        <img
+          src="./img/news_i2.png"
+          alt=""
+          class="news_i2"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        />
+        <img
+          src="./img/news_i3.png"
+          alt=""
+          class="news_i3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        />
+      </div>
+
+      <!-- 푸터 -->
+      <footer>
+        <ul class="f_menu">
+          <li>
+            <a href="#none">홈페이지</a>
+          </li>
+          <li>｜</li>
+          <li><a href="#none">개인정보 보호정책</a></li>
+          <li>｜</li>
+          <li><a href="#none">저작권</a></li>
+          <li>｜</li>
+          <li><a href="#none">연락처</a></li>
+          <li>｜</li>
+          <li><a href="#none">보도자료와 미디어</a></li>
+          <li>｜</li>
+          <li><a href="#none">그린피스 소개</a></li>
+        </ul>
+        <ul class="f_txt">
+          <li>Copyright © 2024 Greenpeace. All Rights Reserved.</li>
+          <li>｜</li>
+          <li>재단법인 그린피스</li>
+          <li>｜</li>
+          <li>대표자: SZE Pang Cheung (쯔이팽청)</li>
+          <li>｜</li>
+          <li>
+            주소: 서울시 용산구 한강대로 257 청룡빌딩 6층 (우편번호: 04322)
+          </li>
+          <li>｜</li>
+          <li>고유번호: 105-82-21567</li>
+        </ul>
+        <div class="footer_in">
+          <img src="./img/logo_g.png" alt="그린피스 로고" />
+          <ul class="sns">
+            <li>
+              <a href="#none"><img src="./img/sns1.png" alt="인스타" /></a>
+            </li>
+            <li>
+              <a href="#none"><img src="./img/sns2.png" alt="유튜브" /></a>
+            </li>
+            <li>
+              <a href="#none"><img src="./img/sns3.png" alt="페이스북" /></a>
+            </li>
+
+            <li>
+              <a href="#none"><img src="./img/sns4.png" alt="전화" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/js.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+    <script type="text/javascript" src="js/odometer.min.js"></script>
+  </body>
+</html>
