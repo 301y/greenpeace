@@ -572,7 +572,8 @@ section {
 }
 
 .slide2 canvas {
-  width: 93%;
+  width: 93% !important;
+  width: 93% !important;
   margin-top: 1.2%;
 }
 
@@ -1506,7 +1507,7 @@ select {
   justify-content: space-around;
 
   background-color: #fff;
-  padding: 100px;
+  padding: 70px;
   border-radius: 100px;
   box-shadow: 0 0 30px #00000015;
   margin-bottom: 120px;
@@ -1844,6 +1845,7 @@ footer img {
   }
   /* 뉴스레터 */
   .in_t {
+    min-width: 260px;
     height: 60px;
     border-radius: 8px;
     border: 1px #999 solid;
@@ -2161,7 +2163,7 @@ footer img {
   .howbox.how_on {
     background-color: #fff;
     color: #333;
-    height: 220px;
+    height: 280px;
     transition: background-color 0.3s ease, color 0.3s ease, height 0.3s ease; /* 부드러운 전환 효과 추가 */
   }
   .howbox.how_on > p {
@@ -2344,10 +2346,33 @@ footer img {
     margin-bottom: 50px;
   }
   .in_t {
-    width: 100%;
+    min-width: 250px;
   }
 }
-
+@media (max-width:600px) {
+  /* 핵심가치 */
+  .c_box_in {
+    padding: 30px 5px;
+  }
+  .c_box_in_in {
+    margin-left: 4px;
+  }
+  .c_box_in_in > p {
+    display: none;
+  }
+  .c_box_in_in h2 {
+    font-size: 18px;
+  }
+  .core {
+    height: 500px;
+    background: url(../img/core_bg.png) 50% 100% no-repeat;
+    background-size: 100%;
+  }
+  .ins h4 {
+    margin-bottom: 20px;
+    margin-top: 120px;
+  }
+}
 @media (max-width: 500px) {
   h1 {
     font-size: 34px;
@@ -2463,7 +2488,7 @@ footer img {
   }
 
   .how > .how1.howbox.how_on{
-    height: 220px;
+    height: 260px;
   }
 
   .how2 > div:nth-child(2) {
