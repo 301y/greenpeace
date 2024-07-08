@@ -110,7 +110,7 @@ $(function () {
       nextEl: ".slide2 .gallery-center .swiper-button-next",
       prevEl: ".slide2 .gallery-center .swiper-button-prev",
     },
-    
+
     pagination: {
       el: ".slide2 .swiper-pagination",
       type: "fraction",
@@ -143,8 +143,9 @@ $(function () {
 function drawCircleGraph() {
   $(".slide2 .circle-graph").each(function (index, node) {
     let perNum = $(this).attr("circleProgress");
-    let fillColors = "rgba(255, 255, 255, 0.8)"; // 그래프의 색상 배열
+    let fillColors = "#ffffff"; // 그래프의 색상 배열
     let fillColor = fillColors;
+
 
     let slideWidth = $(".slide2 .swiper-slide").width(); // .slide2의 폭을 가져옴
 
@@ -163,7 +164,7 @@ function drawCircleGraph() {
       },
       lineCap: "round", // 그래프 선 모양
       reverse: false, // 그래프가 진행되는 방향
-      
+
     });
   });
 }
@@ -395,7 +396,7 @@ function initSectionHeight() {
 // 현재 스크롤 위치를 저장할 변수
 let currentScrollPosition = 0;
 
-// 스크롤 이벤트 핸들러
+// PC용 및 모바일용 스크롤 이벤트 핸들러
 window.addEventListener('scroll', function () {
   currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -403,15 +404,43 @@ window.addEventListener('scroll', function () {
   for (let i = 0; i < menuInfo.length; i++) {
     const section = document.getElementById(menuInfo[i].id);
     if (section && currentScrollPosition >= section.offsetTop - 100 && currentScrollPosition < section.offsetTop + menuInfo[i].height) {
-      // 모든 메뉴 링크의 on_menu 클래스 제거
+      // 모든 PC 메뉴 링크의 on_menu 클래스 제거
       document.querySelectorAll('.nav li a').forEach(link => {
         link.classList.remove('on_menu');
       });
-      // 현재 메뉴 링크에 on_menu 클래스 추가
+      // 현재 PC 메뉴 링크에 on_menu 클래스 추가
       document.querySelector(`.nav li a[href="#${menuInfo[i].id}"]`).classList.add('on_menu');
+
+      // 모든 모바일 메뉴 링크의 on_menu 클래스 제거
+      document.querySelectorAll('.mobile_nav li a').forEach(link => {
+        link.classList.remove('on_menu');
+      });
+      // 현재 모바일 메뉴 링크에 on_menu 클래스 추가
+      document.querySelector(`.mobile_nav li a[href="#${menuInfo[i].id}"]`).classList.add('on_menu');
+      
       break; // 현재 메뉴 링크에 도달했으면 루프 종료
     }
   }
+});
+
+// 모바일 메뉴 토글 기능
+document.querySelector('.menu_on').addEventListener('click', function() {
+  document.querySelector('.mobile_menu').classList.toggle('active');
+});
+
+// 모바일 메뉴 링크 클릭 이벤트
+document.querySelectorAll('.mobile_nav li a').forEach(link => {
+  link.addEventListener('click', function() {
+    // 모든 모바일 메뉴 링크의 on_menu 클래스 제거
+    document.querySelectorAll('.mobile_nav li a').forEach(link => {
+      link.classList.remove('on_menu');
+    });
+    // 클릭한 링크에 on_menu 클래스 추가
+    this.classList.add('on_menu');
+    
+    // 모바일 메뉴 숨기기
+    document.querySelector('.mobile_menu').classList.remove('active');
+  });
 });
 
 // 페이지 로드 시 섹션 높이 초기화
@@ -419,11 +448,12 @@ window.addEventListener('load', initSectionHeight);
 
 
 
+
 // 반응형 클릭 제이쿼리
 
 
 // 후원하기
-$('.do_btn0').click(function() {
+$('.do_btn0').click(function () {
   // 모든 howbox에서 how_on 클래스 제거
   $('.do_btn0').removeClass('do_on');
   // 클릭한 howbox에 how_on 클래스 추가
@@ -432,9 +462,16 @@ $('.do_btn0').click(function() {
 
 
 // 후원금 오도미터
-$(window).resize(function() {
+$(window).resize(function () {
   if ($(window).width() <= 900) {
-    $('.howbox').click(function() {
+    // 다른 클래스에서 how_on 클래스 제거
+    $('[class*="how_"]').removeClass('how_on');
+
+    // 첫 번째 howbox에 how_on 클래스 추가
+    $('.howbox').first().addClass('how_on');
+
+    // 클릭 이벤트 설정
+    $('.howbox').click(function () {
       // 모든 howbox에서 how_on 클래스 제거
       $('.howbox').removeClass('how_on');
       // 클릭한 howbox에 how_on 클래스 추가
@@ -449,9 +486,26 @@ $(window).resize(function() {
 
 
 
-$(document).ready(function() {
-  $(".gnb .gnb_icon .menu_on").click(function() {
+$(document).ready(function () {
+  // 메뉴 아이콘을 클릭하면 moblie_menu에 show 클래스를 토글
+  $(".gnb .gnb_icon .menu_on").click(function () {
     $(".moblie_menu").toggleClass("show");
   });
-});
 
+  // moblie_menu의 mobile_nav의 li a 요소를 클릭하면 show 클래스 제거
+  $(".moblie_menu .mobile_nav li a").click(function () {
+    $(".moblie_menu").removeClass("show");
+  });
+
+  // 윈도우 리사이즈 이벤트 감지
+  $(window).resize(function () {
+    if ($(window).width() >= 1050) {
+      $(".moblie_menu").removeClass("show");
+    }
+  });
+
+  // 페이지 로드 시에도 뷰포트 너비 체크
+  if ($(window).width() >= 1050) {
+    $(".moblie_menu").removeClass("show");
+  }
+});
