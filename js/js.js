@@ -34,6 +34,7 @@ $('.top_btn').click(function () {
   return false;
 });
 
+
 // HTML 요소 선택
 const gnb1 = document.querySelector('.gnb1');
 
@@ -189,13 +190,13 @@ $(".slide2").each(function () {
 });
 
 
-// 오도미터
-
 window.onload = function () {
+  // .odometer 클래스를 가진 모든 요소를 선택
   const odometers = document.querySelectorAll(".odometer");
 
   // 오도미터 요소의 초기값 설정
   odometers.forEach((odometer, index) => {
+    // 각 오도미터 요소에 초기값을 설정 (소수점 1자리로 고정)
     odometer.textContent = [38.2, 24, 18.9, 6.8, 6.4, 5.7][index].toFixed(1);
   });
 
@@ -204,8 +205,11 @@ window.onload = function () {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // 뷰포트에 진입하면 오도미터 애니메이션 실행
-          animateOdometers();
+          // 뷰포트에 진입하면 해당 오도미터 애니메이션 실행
+          const index = Array.from(odometers).indexOf(entry.target);
+          const targetValue = [38.2, 24, 18.9, 6.8, 6.4, 5.7][index];
+          const duration = index === 1 ? 1500 : 2000; // 24의 경우 더 짧은 duration
+          animateOdometer(entry.target, targetValue, duration);
           // 관찰 중지
           observer.unobserve(entry.target);
         }
@@ -222,16 +226,6 @@ window.onload = function () {
     observer.observe(odometer);
   });
 };
-
-function animateOdometers() {
-  const odometers = document.querySelectorAll(".odometer");
-
-  odometers.forEach((odometer, index) => {
-    const targetValue = [38.2, 24, 18.9, 6.8, 6.4, 5.7][index];
-    const duration = index === 1 ? 1500 : 2000; // 24의 경우 더 짧은 duration
-    animateOdometer(odometer, targetValue, duration);
-  });
-}
 
 function animateOdometer(odometer, targetValue, duration) {
   const startValue = parseFloat(odometer.textContent);
@@ -251,17 +245,20 @@ function animateOdometer(odometer, targetValue, duration) {
     odometer.textContent = currentValue.toFixed(targetValue === 24 ? 0 : 1);
 
     if (elapsedTime < duration) {
+      // 애니메이션이 아직 끝나지 않았으면 다음 프레임 요청
       requestAnimationFrame(animate);
     }
   }
 
+  // 첫 번째 애니메이션 프레임 요청
   requestAnimationFrame(animate);
 }
 
 // easing 함수
 function easeOutQuad(t) {
-  return t * (2 - t);
+  return t * (2 - t); // 애니메이션의 속도를 부드럽게 조절하는 함수
 }
+
 
 
 
